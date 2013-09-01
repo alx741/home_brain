@@ -11,10 +11,11 @@ You can control lights, TV's, sound, watch security cams, open doors, etc.
 
 In a sigth your be able to talk with your house just like talking with a person, and ask it for do mentioned tasks for you.
 
-The main directory tree its:
+The main directory tree is:
 
 src:  Core source tree with autobuild files and hardware control software, also contain CLI
 wbi:  "Web based interface" for user managment of house behavior 
 app:  Android based applicatión for user managment of house behavior
+hdwr: Hardware Schematics
 
 
