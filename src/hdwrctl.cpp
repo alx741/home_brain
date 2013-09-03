@@ -39,6 +39,7 @@ int main(int argc, char **argv)
 	*/
 
 	//Check parameters: recive an (0 to pins)  int number , to describe wich digital hardware pin need to put up
+	//and <0 , 1 > to describe off and on states for that pin.
 	if ( (argc!=3) || ( atoi(argv[1])<0 || atoi(argv[1])>pins ) || ( argv[2]!="0" || argv[2]!="1" ) )
 								{ cout << "Usage: " << argv[0] << " [number] " << "<0,1> " << endl 
 									<< "[number] is a (0 - " << pins 
