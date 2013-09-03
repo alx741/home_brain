@@ -1,3 +1,22 @@
+/*
+ This file is part of home_brain.
+
+ home_brain is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ home_brain is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+
 #include <iostream>
 #include <stdlib.h>
 #include <sys/io.h>
@@ -15,7 +34,7 @@ int main(int argc, char **argv)
 {
 
 	//Check parameters: recive an (0 to pins)  int number , to describe wich digital hardware pin need to put up
-	if( (argc!=2) || ( atoi(argv[1])<0 || atoi(argv[1])>pins ) ){ cout << "Usage: " << argv[0] << " [number] " << endl << "[number] is a (0 - " << pins << ") that describes hardware pin to put up" << endl; }
+	if( (argc!=3) || ( atoi(argv[1])<0 || atoi(argv[1])>pins ) ){ cout << "Usage: " << argv[0] << " [number] " << endl << "[number] is a (0 - " << pins << ") that describes hardware pin to put up" << endl; }
 
 	//Configure port permissions
 	if(ioperm(pp_port,1,1))
