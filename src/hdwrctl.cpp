@@ -22,7 +22,7 @@
 #include <sys/io.h>
 
 #define pp_port (0x378) 
-const short unsigned int  pins = 8; //Hardware digital pins available
+const short unsigned int  pins = 8; //Hardware number of digital pins available
 
 
 using namespace std;
@@ -33,11 +33,21 @@ using namespace std;
 int main(int argc, char **argv)
 {
 
+
+	/*TODO
+	 * Improve this fucking ugly "Usage" message
+	*/
+
 	//Check parameters: recive an (0 to pins)  int number , to describe wich digital hardware pin need to put up
-	if( (argc!=3) || ( atoi(argv[1])<0 || atoi(argv[1])>pins ) ){ cout << "Usage: " << argv[0] << " [number] " << endl << "[number] is a (0 - " << pins << ") that describes hardware pin to put up" << endl; }
+	if ( (argc!=3) || ( atoi(argv[1])<0 || atoi(argv[1])>pins ) || ( argv[2]!="0" || argv[2]!="1" ) )
+								{ cout << "Usage: " << argv[0] << " [number] " << "<0,1> " << endl 
+									<< "[number] is a (0 - " << pins 
+									<< ") that describes hardware pin to put up" << endl;
+       									<< "<0,1> describes pin off or on state respectivly"<<endl;
+								}
 
 	//Configure port permissions
-	if(ioperm(pp_port,1,1))
+	if (ioperm(pp_port,1,1))
 	{ 
 		cout << "Fatal Error:  Can't use pp_port, not enough permissions." << endl << flush;
 		return -1;
