@@ -64,6 +64,7 @@ int main(int argc, char **argv)
 	if (argv[1] == "init")
 	{
 		outb(1,PP_PORT);
+		return 0;
 
 	}
 
