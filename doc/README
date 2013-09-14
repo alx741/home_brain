@@ -17,5 +17,11 @@ src:  Core source tree with autobuild files and hardware control software, also 
 wbi:  "Web based interface" for user managment of house behavior 
 app:  Android based applicatión for user managment of house behavior
 hdwr: Hardware Schematics
+doc:  Documentation files
 
 
+OS
+==
+
+Home_brain runs under Unix like systems only, if you want to run it under Micro$oft Window$  you're free to port it (or try it) 
+but please do not ask me to do it for you, i don't use window$ and don't wanna to give support for it at all.
