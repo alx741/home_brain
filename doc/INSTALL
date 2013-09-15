@@ -1,9 +1,27 @@
 INSTALL
 =======
 
+CLI
+===
+
 $ make
 
-# make install
+
+WBI
+===
+
+-Install apache server with php interpreter, 
+then move all wbi files on server documentroot
+
+-Compile CLI with make and move ELF binary to apache server documentroot too
+
+-Give apache some permission to execute sudo, maybe add apache user to wheel group 
+and configure sudo to execute without password. (can be very dangerous, do it at you'r own risk)
+
+-Start apache server and request index.php from every device with an explorer
+
+You can add, substract, and modify control ports in config.php, you can also modify acces password on it.
+
 
 
 Thats all for now!! , pretty simple eh?
