@@ -1,14 +1,13 @@
 <?php
 
 //Add pins or modify each one to make it concordate with each control object among with hardware connections 
-$CONTROL_1 = "cocina 1";
-$CONTROL_2 = "Control 2";
-$CONTROL_3 = "Control 3";
-$CONTROL_4 = "Control 4";
-$CONTROL_5 = "Control 5";
-$CONTROL_6 = "Control 6";
-$CONTROL_7 = "Control 7";
-$CONTROL_8 = "Control 8";
+$CONTROL_1 = "Luz Sala";
+$CONTROL_2 = "Luz Cocina";
+$CONTROL_3 = "Puerta garage";
+$CONTROL_4 = "Luz Dormitorio Hijos";
+$CONTROL_5 = "Luz Dormitorio Padres";
+$CONTROL_6 = "Radio";
+$CONTROL_7 = "TV";
 
 //Admin password
 //TODO:  Permit multiple users and passwords with users defined permissions
