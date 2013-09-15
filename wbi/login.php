@@ -11,11 +11,6 @@
 include('./config.php');
 
 $pass = $_POST['passwd'];
-echo $pass;
-echo md5($pass);
-echo "<br>";
-echo $pass_md5;
-
 
 //Comparing password
 if(md5($pass) == $pass_md5)
