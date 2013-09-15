@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 
 	/* Set PP_PORT data byte to standar init value (usully zero) */
 	//hardware specyfic requierements needs data byte set to 1 
-	if (argv[1] == "init")
+	if (atoi(argv[1]) == 0)
 	{
 		outb(1,PP_PORT);
 		return 0;
@@ -79,7 +79,7 @@ int main(int argc, char **argv)
 	//and <0 , 1 > to describe off and on states for that pin.
 	
 
-	if ( (argc!=3) || ( atoi(argv[1])<0 || atoi(argv[1])>pins ) || ( atoi(argv[2])!=0 && atoi(argv[2])!=1 )  )
+	if ( (argc!=3) || ( atoi(argv[1])<1 || atoi(argv[1])>pins ) || ( atoi(argv[2])!=0 && atoi(argv[2])!=1 )  )
 								{ cout << "Usage: " << argv[0] << " [number] " << "<0,1> " << endl 
 									<< "[number] is a (0 - " << pins 
 									<< ") that describes hardware pin to put up" << endl
