@@ -1,16 +1,35 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/cmdStart"
+        android:layout_width="212dp"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_weight="0.81"
+        android:text="@string/start" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/cmdSettings"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/settings" />
+
+    <Button
+        android:id="@+id/cmdExit"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/exit" />
+
+</LinearLayout>
