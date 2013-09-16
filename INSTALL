@@ -4,7 +4,7 @@ INSTALL
 COMPILING
 =========
 
-$ make
+$ make all
 
 This would compile CLI app and Android app
 
