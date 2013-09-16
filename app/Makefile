@@ -1,9 +1,9 @@
 APP = ./app#Android control app
 BIN = ../bin
 
-all: app
-
 app:
-	ant
-	cp ./bin/HomeBrain1.apk $(BIN)/
+	ant debug
+	cp ./bin/homebrain1.example.com-debug.apk $(BIN)/home_brain.apk
 
+clean:
+	ant clean
