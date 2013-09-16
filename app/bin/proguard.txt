@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:16
+-keep class com.example.homebrain1.MainActivity { <init>(...); }
+
