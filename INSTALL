@@ -1,10 +1,12 @@
 INSTALL
 =======
 
-CLI
-===
+COMPILING
+=========
 
 $ make
+
+This would compile CLI app and Android app
 
 
 WBI
